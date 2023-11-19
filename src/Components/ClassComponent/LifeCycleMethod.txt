@@ -1,0 +1,56 @@
+// Image of lifeCycle : https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+
+
+//Method of Calling Componenets (Functional and Class) 
+    Constructor is called
+    Render is called
+    Component Did Mount is called
+
+//If class function(component) is called in parent component
+    Parent Constructor Called
+    Parent Render Method
+    Child Constructor Called
+    Child Render Method
+    Child Component Did Mount
+
+//If Did Mount present in components(//Best place to call Api)
+    Parent Constructor Called
+    Parent Render Method
+    Child Constructor Called
+    Child Render Method
+    Parent Component Did Mount
+    Child Component Did Mount
+
+//If Did Update and render update is present.
+    Parent Constructor Called
+    Parent Render Method
+    Child Constructor Called
+    Child Render Method
+    Child Component Did Mount
+    Parent Component Did Mount
+    Child Render Method
+    Child Component Did Update
+
+
+//   Mount => To load something
+
+// component Did Unmount help to stop running when we switch to other page.
+
+//UseEffect is Now used and it perform all instead of classComponent.
+
+
+//UseEffect Hook to stop a page running is:
+
+    useEffect(()=>{
+        const timer=setInterval(()=>{
+            console.log("2000")
+        },1000)
+        return ()=>{
+            clearInterval(timer)
+        }
+    },[])
+
+
+
+    

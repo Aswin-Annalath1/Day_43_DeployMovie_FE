@@ -1,0 +1,77 @@
+.movieContainer{
+  width: 290px;
+  margin:2%;
+  border: 1px solid red;
+}
+.moviePoster{
+  height:300px;
+  width:290px;
+}
+/* It is to apply to all */
+*{              
+  margin:0;
+  padding:0;
+}
+.movieSpecs{
+  display:flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+.movieSummary{
+  overflow: auto;
+  height: 65px;
+  font-size: 14px;
+  padding:4px;
+
+}
+.button{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 115px;
+} 
+/* .App{
+  display:flex;
+  flex-wrap: wrap;
+  gap:5px;
+  padding-left: 70px;
+  padding-top: 10px;
+} */
+.movieSection{
+  display:flex;
+  flex-wrap: wrap;
+  gap:5px;
+  padding-left: 70px;
+  padding-top: 10px;
+}
+
+/* Game */
+
+.gamebox{
+  height:80px;
+  width:80px;
+  border: 1px solid black;
+  font-size: 50px;
+  text-align: center;
+}
+.board{
+  width:240px;
+  border:1px solid red;
+  display:grid;
+  grid-template-columns: auto auto auto;
+  margin:0 auto;
+}
+.winner{
+  text-align: center;
+  margin: 20px;
+  color: green;
+}
+
+/* THEME */
+
+.themebox{
+  height:300px;
+  border:1px solid black;
+  width:500px;
+  margin:40px;
+  padding: 30px;
+}
